@@ -1,0 +1,13 @@
+{% extends "layout.html.j2" %}
+
+{% block title %}Main Page{% endblock %}
+
+{% block main %}
+    {% if _name %}
+        <h1>Welcome, {{ _name | capitalize }}!</h1>
+    {% else %}
+        <h1>Welcome, Guest!</h1>
+    {% endif %}
+    <p>This is the main page of the Dice-Roller application.</p>
+    <button onclick="location.href='/dices'">Roll a Dice</button>
+{% endblock %}
