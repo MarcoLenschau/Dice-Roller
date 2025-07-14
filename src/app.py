@@ -1,7 +1,7 @@
-from flask import Flask, render_template
+from . import create_app
+from flask import render_template
 
-app = Flask(__name__)
-
+app = create_app()
 
 def render(file, context = None, author = "Marco Lenschau"):
     return render_template(file, _name=context, _author=author)
