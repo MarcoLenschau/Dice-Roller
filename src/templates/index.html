@@ -3,8 +3,8 @@
 {% block title %}Main Page{% endblock %}
 
 {% block main %}
-    {% if _name %}
-        <h1>Welcome, {{ _name | capitalize }}!</h1>
+    {% if _content %}
+        <h1>Welcome, {{ _content | capitalize }}!</h1>
     {% else %}
         <h1>Welcome, Guest!</h1>
     {% endif %}
